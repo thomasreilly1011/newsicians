@@ -1,0 +1,220 @@
+html{
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+head{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Head styling start */
+
+  ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #243872;
+    color: white;
+    font-family: arial;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+  }
+
+  div.navbar {
+    height: 40px;
+    position: absolute;
+    position: sticky;
+    top: 34px;
+    width: 100%;
+    z-index: 9;
+    margin: 0;
+  }
+
+  div.infobar {
+    height: 35px;
+    position: absolute;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    margin: 0;
+  }
+
+  .user-info{
+    background-color: #265593;
+  }
+
+  .user-info li{
+    float: right;
+  }
+
+  .user-info li a{
+    padding: 8px 16px;
+    color: white;
+  }
+
+  li {
+    display: inline-block;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  li a {
+    font-family: Arial;
+    display: block;
+    transition: 0.6s ease;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 14px 40px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #3552A8;
+    text-decoration: underline;
+  }
+
+  .image{
+    display: block;
+    overflow: hidden;
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    object-fit: contain;
+    object-position: center;
+  }
+/*Head styling end */
+
+div.footer{
+  position: relative;
+  padding-top: 8px;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  background-color: #243872;
+  text-align: center;
+}
+
+div.footer p{
+  font-family: Arial;
+  color: white;
+  font-size: 12px;
+  bottom: 20;
+}
+
+.social {
+  margin: 15px;
+  margin-top: 8px;
+  max-height: 30px;
+  max-width: 30px;
+}
+
+/* Slideshow Styling Start */
+  .slideshow {
+    margin: auto;
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+  }
+
+  .slides img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .prev, .next {
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev:hover, .next:hover {
+    color: #A9A9A9;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+/* Mobile */
+  @media only screen and (min-width: 480px) and (max-width: 991px){
+    .slideshow {
+      height: 25%;
+    }
+  }/* Desktop */
+  @media only screen and (min-width: 992px){
+    .slideshow {
+      height: calc(-265px + 100vh);
+    }
+  }
+
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* Slideshow Styling End */
+
+.learn_more {
+  left: calc(50% - 25px);
+  bottom: 0;
+  margin-bottom: 15px;
+  height: 10%;
+  width: 4%;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
